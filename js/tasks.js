@@ -103,7 +103,6 @@
 // // Виведення загального доходу магазину
 // console.log(myShop.totalRevenue()); // Очікувано: 2000
 
-
 // TODO: =========Task2=========
 //!  Задача: Керування Користувачами
 // Створіть клас User, який буде представляти користувача вашого додатку.У кожного користувача має бути наступна інформація:
@@ -150,7 +149,6 @@
 //     return this.role;
 //   }
 
-
 //   set role(newRole) {
 //     this.role = newRole;
 //   }
@@ -163,7 +161,6 @@
 // const user1 = new User('Petya', "jh@hh", "administration");
 // user1.name = 'Anna';
 // user1.getUser();
-
 
 // TODO: =========Task2=========
 
@@ -180,3 +177,89 @@
 // Додайте методи для додавання нової книги до бібліотеки та видалення книги з бібліотеки за її ISBN.
 // Додайте метод для пошуку книги за назвою та метод для відображення всіх книг у бібліотеці.
 // Створіть декілька об'єктів класу Book та додайте їх до об'єкту класу Library.Використайте методи для видалення та пошуку книг, а також для відображення всіх книг у бібліотеці.
+
+// class Book {
+//   constructor(inviteBook) {
+//     this.name = inviteBook.name;
+//     this.author = inviteBook.author;
+//     this.year = inviteBook.year;
+//     this.isbn = inviteBook.isbn;
+//   }
+
+//   getBook() {
+//     console.log(
+//       `Name book: ${this.name}, author: ${this.author}, year of publication ${this.year}, ISBN: ${this.isbn}`
+//     );
+//   }
+// }
+
+// class Library {
+//   constructor() {
+//     this.bookshelf = [];
+//   }
+
+//   addBook(book) {
+//     this.bookshelf.push(book);
+//   }
+
+//   reduceBook(isbn) {
+//     this.bookshelf.splice(
+//       this.bookshelf.find(item => item.isbn === isbn),
+//       1
+//     );
+//   }
+
+//   getForName(name) {
+//     return this.bookshelf.find(item => item.name === name);
+//   }
+
+//   getBookshelf() {
+//     return this.bookshelf;
+//   }
+// }
+
+// const HaryPoter1Book = {
+//   name: 'HaryPoter1',
+//   author: 'Joan Roaling',
+//   year: 1900,
+//   isbn: 123,
+// };
+
+// const HaryPoter2Book = {
+//   name: 'HaryPoter2',
+//   author: 'Joan Roaling',
+//   year: 1910,
+//   isbn: 1234,
+// };
+
+// const HaryPoter3Book = {
+//   name: 'HaryPoter3',
+//   author: 'Joan Roaling',
+//   year: 1912,
+//   isbn: 12345,
+// };
+
+// const library = new Library();
+
+// const haryPoter1 = new Book(HaryPoter1Book);
+// const haryPoter2 = new Book(HaryPoter2Book);
+// const haryPoter3 = new Book(HaryPoter3Book);
+
+// library.addBook(haryPoter1);
+// library.addBook(haryPoter2);
+// library.addBook(haryPoter3);
+
+// console.log(library.getBookshelf());
+
+// TODO: =========Task2=========
+
+//! Додавання товарів до кошика:
+// Користувач повинен мати можливість додати товар до кошика, натиснувши на відповідну кнопку на сторінці товару.
+// Кожен товар має мати унікальний ідентифікатор, назву, ціну та кількість одиниць товару.
+// Видалення товарів з кошика:
+// Користувач повинен мати можливість видалити товар з кошика, натиснувши на кнопку "Видалити" поруч з товаром у списку кошика.
+// Обчислення загальної вартості:
+// На сторінці кошика повинен бути відображений список усіх товарів, які додані до кошика, разом з їх ціною та кількістю.
+// Під списком товарів повинна бути відображена загальна вартість кошика.
+// Збереження стану кошика:
+// Стан кошика (товари, їх кількість) повинен зберігатися між сеансами користувача.
