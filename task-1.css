@@ -1,0 +1,23 @@
+.input-name {
+  color: black;
+  background-color: aliceblue;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: 1px solid #109213;
+}
+
+.btn-btn {
+  color: aliceblue;
+  padding: 8px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  background-color: #109213;
+}
+
+li {
+    font-size: 16px;
+    
+}
